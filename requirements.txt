@@ -1,0 +1,4 @@
+PyQt6==6.9.1
+graphviz==0.21
+pydot==4.0.1
+pyparsing==3.2.5
