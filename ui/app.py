@@ -1,4 +1,3 @@
-import sys
 from typing import List
 
 from PyQt6.QtWidgets import (
@@ -25,7 +24,6 @@ class SignalsViewerApp:
 
     def __init__(self, signals: List[Signal]):
         self.signals = signals
-        self.app = QApplication(sys.argv)
         self.window = QMainWindow()
         self.window.setWindowTitle("Django Signals Explorer")
         self.window.resize(1000, 600)
@@ -210,4 +208,4 @@ class SignalsViewerApp:
 
     def run(self) -> int:
         self.window.show()
-        return self.app.exec()
+        return QApplication.instance().exec()

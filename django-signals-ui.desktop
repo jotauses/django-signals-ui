@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Django Signals UI
+Comment=Gestión de Django Signals
+Exec=sh -c 'cd "$(dirname %k)" && ./launcher.sh'
+Icon=django-signals-ui
+Terminal=false
+Categories=Development;
